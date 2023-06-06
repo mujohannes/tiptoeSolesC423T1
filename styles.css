@@ -1,3 +1,33 @@
+:root {
+  --main-color: #333333;
+  --aside-color: #666666;
+}
+body {
+  margin: 0;
+  background-color: lightblue;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 .logo {
   max-width: 100px;
+}
+.main-header {
+  background-color: var(--main-color);
+  display: grid;
+  grid-template-columns: 12em 1fr auto;
+}
+#search-form {
+  justify-self: center;
+}
+.main-footer {
+  background-color: var(--main-color);
+  min-height: 10em;
+}
+.container {
+  display: grid;
+  grid-template-columns: 12em 1fr;
+}
+.sidebar {
+  background-color: var(--aside-color);
 }
