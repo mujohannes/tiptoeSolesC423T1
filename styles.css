@@ -31,3 +31,14 @@ body {
 .sidebar {
   background-color: var(--aside-color);
 }
+.slide {
+  background-color: lightyellow;
+  width: 100%;
+  min-height: 33vh;
+}
+.slideshow {
+  min-width: 100%;
+}
+.flickity-viewport {
+  margin-right: -0.5%;
+}
