@@ -2,6 +2,10 @@
   --main-color: #333333;
   --aside-color: #666666;
 }
+/* fix for slideshow gap */
+html {
+  overflow-y: scroll;
+}
 body {
   margin: 0;
   background-color: lightblue;
@@ -34,11 +38,26 @@ body {
 .slide {
   background-color: lightyellow;
   width: 100%;
-  min-height: 33vh;
+  min-height: 45vh;
+  display: grid;
+  place-items: center center;
+  background-size: cover;
+  background-position: center center;
 }
-.slideshow {
-  min-width: 100%;
+.one {
+  background-image: url("images/candra-winata-CYOFvtpOIpU-unsplash.jpg");
 }
-.flickity-viewport {
-  margin-right: -0.5%;
+.two {
+  background-image: url("images/domino-164_6wVEHfI-unsplash.jpg");
+}
+.three {
+  background-image: url("images/fitsum-admasu-oGv9xIl7DkY-unsplash.jpg");
+}
+.slide h1 {
+  background-color: black;
+  color: white;
+  align-self: end;
+  min-width: 12ch;
+  text-align: center;
+  border-radius: 10px;
 }
