@@ -15,6 +15,7 @@ body {
 }
 .logo {
   max-width: 100px;
+  padding: 0.5em;
 }
 .main-header {
   background-color: var(--main-color);
@@ -24,6 +25,9 @@ body {
 #search-form {
   justify-self: center;
 }
+.nav-button {
+  display: none;
+}
 .main-footer {
   background-color: var(--main-color);
   min-height: 10em;
@@ -31,6 +35,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 12em 1fr;
+  position: relative;
 }
 .sidebar {
   background-color: var(--aside-color);
@@ -61,3 +66,19 @@ body {
   text-align: center;
   border-radius: 10px;
 }
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-nav a {
+  min-width: 100%;
+  color: white;
+  padding: 0.8em;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+}
+.main-nav a:hover {
+  background-color: var(--main-color);
+}
+

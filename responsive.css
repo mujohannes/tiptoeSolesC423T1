@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px ) {
+    .logo {
+        width: 50px;
+    }
+    .main-header {
+        grid-template-columns: auto 1fr auto;
+    }
+    .nav-button {
+        display: block;
+    }
+    .sidebar {
+        position: absolute;
+        left: -100%;
+        z-index: 9999;
+        bottom: 0px;
+        top: 0px;
+        transition: left 0.5s;
+    }
+    .sidebar.open {
+        left: 0px;
+    } 
+    .container {
+        grid-template-columns: auto 1fr;
+    }
+    .content {
+        grid-column-start: 2;
+    }
+}
